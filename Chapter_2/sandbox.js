@@ -226,3 +226,22 @@ console.log(surname > 'Castro'); //is true since lowerletter 'c' are greater tha
 console.log(surname > 'Arleen'); //is true since lowerletter 'c' are greather than any uppercase letter
 
 
+// Loose comparison (different types can still be equal)
+let four = 44;
+console.log(four == 44);
+console.log(four == '44'); // is true since the javascript convert the string to a number
+
+console.log(four != 44); 
+console.log(four != '44');  // is true since the javascript convert the string to a number
+
+
+// Strict comparison (different types cannot be equal)
+
+console.log(four === 44); // this means that the same value and type has to be 44 - true
+console.log(four === '44'); //this is false since the type is not the same than the variable
+
+console.log(four !== 44); // this false since the value and type has the same 44
+console.log(four !== '44'); //this is true since the type is not the same than the variable
+
+////////////////////////// Type conversion /////////////////////
+
