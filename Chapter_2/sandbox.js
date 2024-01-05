@@ -245,3 +245,14 @@ console.log(four !== '44'); //this is true since the type is not the same than t
 
 ////////////////////////// Type conversion /////////////////////
 
+let scores = '100';
+scores = Number(scores)  //convert the string to a number
+console.log(scores + 1);
+console.log(typeof scores); //to check if the variable is a number or string
+
+let str = String(50);    // convert the number(50) into a string
+console.log(str);
+console.log(str, typeof str); 
+
+let zero = Boolean(10);     // for boolean 
+console.log(zero, typeof str); 
