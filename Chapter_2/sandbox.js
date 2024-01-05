@@ -169,11 +169,60 @@ newMem = ninjas.pop();   //removes the last element added to the array and retur
 console.log(newMem);
 
 
-////////////////////////////////////////////////////////////////////
+//////////////////////////// NAN - undefined value////////////////////////////////////////
 
-//NAN - undefined value
+//let numb;
+//console.log(numb, numb + 3, `the age is ${numb}`); //undefined NaN since we don't give a value at the variable numb
 
-let numb;
+let numb = null;
+console.log(numb, numb + 3, `the age is ${numb}`);   //null change to null but when try to add the value 3 to null this just show us 3 since null take the value of 0
 
-console.log(numb, numb + 3, `the age is ${numb}`); //undefined NaN since we don't give a value at the variable numb
+
+
+/////////////////////////// Boolean ////////////////////////////////////////
+
+// Booleans & Comparisons
+console.log(true, false, "true", "false");
+
+// methods can return booleans
+let emai = 'ccastro@rrc.ca';
+let charac = ['mario', 'luigi', 'toad'];
+
+let check = email.includes('p'); //return true if the characters is in the variable if this is not in there would be false
+console.log(check);
+
+let checks = charac.includes('toad'); //return true if the name is in the array if this is not in there would be false
+console.log(checks);
+
+// Comparision operators
+
+let numbers = 35
+console.log(numbers == 35);  //is numbers equals to 35 = true
+console.log(numbers == 23);  //is numbers equals to 23 = false (because 23 is not equals to 35)
+
+console.log(numbers != 15);  //is number not equals to 15 is true
+console.log(numbers != 35);  //is number not equals to 35 is false (because 35 is equal to 35)
+
+console.log(numbers > 20);  //is numbers greater than 20 = true (35)
+console.log(numbers > 40);  //is numbers greater than 40 = false (40)
+
+console.log(numbers < 20);  //is numbers less than 20 = false (20)
+console.log(numbers < 40);  //is numbers less than 40 = true (35)
+
+console.log(numbers >= 35);  //is numbers is greater or equals to 35 = true
+console.log(numbers >= 40);  //is numbers is greater or equals to 40 = false (because 35 is not greater or equals to 40)
+
+console.log(numbers <= 25);  //is numbers is less or equals to 35 = false
+console.log(numbers <= 40);  //is numbers is less or equals to 40 = true (because 35 is less or equals to 40)
+
+
+// Comparision operators - Letters
+
+let surname = 'castro';
+console.log(surname == 'castro');
+console.log(surname == 'Castro'); //is not equal since this has Capital letter
+console.log(surname > 'tapia'); //is not greater since 'c' in the alphabet is less than 't'.
+console.log(surname > 'Castro'); //is true since lowerletter 'c' are greater than uppercase letter 'C'
+console.log(surname > 'Arleen'); //is true since lowerletter 'c' are greather than any uppercase letter
+
 
