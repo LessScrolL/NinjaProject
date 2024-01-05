@@ -151,3 +151,29 @@ console.log(ages[2]);
 let random = ['susy', 'cleo', 20, 30]; //we can store strings and number in the arrays
 console.log(random);
 
+console.log(ninjas.length);  //to check how many name of variables contains this array
+
+// Array Methods
+
+let names = ninjas.join(',');  // put all the names of the ninjas separate by commas in a string
+console.log(names);
+
+let indes = ninjas.indexOf('Cleo'); //this gave me the position number of the name = 2
+console.log(indes);
+
+let members = ninjas.concat(['Fran', 'Cynthia']);  // Add o concatenate the following members to the ninjas
+console.log(members);
+
+let newMem = ninjas.push(['Fran']);  // return the last length of the new array(ninjas)
+newMem = ninjas.pop();   //removes the last element added to the array and returns it (print it)
+console.log(newMem);
+
+
+////////////////////////////////////////////////////////////////////
+
+//NAN - undefined value
+
+let numb;
+
+console.log(numb, numb + 3, `the age is ${numb}`); //undefined NaN since we don't give a value at the variable numb
+
