@@ -112,6 +112,7 @@ console.log(concat);
 
 
 ////////////////////////////////////////////////////////
+
 // Template Strings
 const title = 'Best reads of 2019';
 const author = 'Cynthia';
@@ -128,4 +129,25 @@ let sent = `The blog called ${title} by ${author} has ${likess} likes`;
 console.log(sent);
 
 // creating html templates
+let html = `
+    <h2>${title}</h2>
+    <p>By ${author}</p>
+    <span>This blog has ${likess} likes</span>
+`;
+console.log(html);
+
+///////////////////////////// Arrays /////////////////////////////////
+
+let ninjas = ['Domi', 'Susy', 'Cleo'];
+
+//ninjas[1] = 'Fran';         //Override a name with the position and new name 'Domi'
+//console.log(ninjas[1]);    //give us just the name of the position that selected[1] = susy
+
+console.log(ninjas);
+
+let ages = [20,25,30,35];
+console.log(ages[2]);
+
+let random = ['susy', 'cleo', 20, 30]; //we can store strings and number in the arrays
+console.log(random);
 
