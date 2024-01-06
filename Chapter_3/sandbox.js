@@ -148,21 +148,45 @@ for(let i = 0; i < scores.length; i++){
 
 const grade = 'D';
 
-
-////// using if statements     ////////////////////
-if(grade === 'A'){
-
-}else if (grade === 'B'){
-
-}else if(grade === 'C'){
-
-}else if(grade === 'D'){
-
-}else if(grade === 'E'){
-
-}else{
-
+switch(grade){
+    case 'A':
+        console.log('You got an A');
+        break;
+    case 'B':
+        console.log('You got an B');
+        break;
+    case 'C':
+        console.log('You got an C');
+        break;
+    case 'D':
+        console.log('You got an D');
+        break;
+    case 'E':
+        console.log('You got an E');
+        break;
+    default:
+        console.log('not a valid grade');
 }
+
+
+//////////////////  variables & block scope //////////////////
+
+// global scope
+
+let age = 30;
+
+if(true){
+    let age = 40;     //create local scope inside the code block 'age 40'
+    console.log('inside 1st code block: ', age);
+
+    if(true){
+        let age = 50;   // if i put a variable here this value just belong to this code
+        console.log('inside 2nd code block: ', age);  //this take the most recently defined value 
+    }
+}
+
+console.log('outside code block: ', age);    //this take the first variable 'age 30'
+
 
 
 
